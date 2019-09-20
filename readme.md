@@ -1,5 +1,5 @@
 ##  Simple Chat UI (10% like WhatsApp)
-iOS Apps, for simple chatting or messaging view, developed with UIableView and custom UITableViewCells (no third party library or pods required)
+iOS Apps, for simple chatting or messaging view, developed with UITableView and custom UITableViewCell (no third party library or pods required)
 
 ### Development Environment
 - Xcode 10
@@ -13,6 +13,7 @@ No specific installation required, just hit the Run button.
 - Image
 - Sender name
 - Message bubble tail
+- Chat list
 
 ### License
 Licensed under the [MIT license](http://opensource.org/licenses/MIT)
