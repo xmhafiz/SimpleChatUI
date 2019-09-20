@@ -45,12 +45,12 @@ extension ViewController: UITableViewDataSource {
         let message = messages[indexPath.row]
         if message.side == .left {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LeftViewCell") as! LeftViewCell
-            cell.configureCell(text: message.text)
+            cell.configureCell(message: message)
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "RightViewCell") as! RightViewCell
-            cell.configureCell(text: message.text)
+            cell.configureCell(message: message)
             return cell
         }
     }

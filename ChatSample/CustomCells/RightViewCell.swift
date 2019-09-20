@@ -22,7 +22,7 @@ class RightViewCell: UITableViewCell {
         backgroundColor = .clear
     }
     
-    func configureCell(text: String) {
-        textMessageLabel.text = text
+    func configureCell(message: Message) {
+        textMessageLabel.text = message.text
     }
 }
