@@ -9,8 +9,6 @@ iOS Apps, for simple chatting or messaging view, developed with UIableView and c
 ### Installation
 No specific installation required, just hit the Run button.
 
-![screenshot](screenshot.png)
-
 ### To be Added (Maybe)
 - Image
 - Sender name
@@ -18,3 +16,5 @@ No specific installation required, just hit the Run button.
 
 ### License
 Licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+![screenshot](screenshot.png)
