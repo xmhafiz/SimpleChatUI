@@ -17,13 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // set title
         title = "Lorem Ipsum"
-        // set background
-        view.backgroundColor = UIColor(hexString: "E4DDD6")
         
         // config tableView
         tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
-        tableView.backgroundColor = .clear
+        tableView.backgroundColor = UIColor(hexString: "E4DDD6")
         tableView.tableFooterView = UIView()
         // cell setup
         tableView.register(UINib(nibName: "RightViewCell", bundle: nil), forCellReuseIdentifier: "RightViewCell")

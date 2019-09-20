@@ -18,16 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-rp-Gie">
+                                <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-pD-Mhj">
+                                        <rect key="frame" x="16" y="12" width="330" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fJC-fG-ijt"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7a-Df-bB8">
+                                        <rect key="frame" x="362" y="17" width="36" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Send"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="k7a-Df-bB8" firstAttribute="leading" secondItem="E4D-pD-Mhj" secondAttribute="trailing" constant="16" id="1D7-oP-j3e"/>
+                                    <constraint firstItem="k7a-Df-bB8" firstAttribute="centerY" secondItem="ONr-rp-Gie" secondAttribute="centerY" id="1u2-g5-vCM"/>
+                                    <constraint firstAttribute="height" constant="64" id="2uO-RV-tbG"/>
+                                    <constraint firstItem="E4D-pD-Mhj" firstAttribute="leading" secondItem="ONr-rp-Gie" secondAttribute="leading" constant="16" id="D4U-ed-lfm"/>
+                                    <constraint firstItem="E4D-pD-Mhj" firstAttribute="centerY" secondItem="ONr-rp-Gie" secondAttribute="centerY" id="KWH-fm-oTk"/>
+                                    <constraint firstAttribute="trailing" secondItem="k7a-Df-bB8" secondAttribute="trailing" constant="16" id="XTz-yZ-rOl"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-Ii-HVZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="710"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hdu-Ii-HVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FXn-Rh-g1S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdu-Ii-HVZ" secondAttribute="trailing" id="GmM-5f-cVW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hdu-Ii-HVZ" secondAttribute="bottom" id="Szo-RR-HVM"/>
+                            <constraint firstItem="ONr-rp-Gie" firstAttribute="top" secondItem="hdu-Ii-HVZ" secondAttribute="bottom" id="HaT-fh-Mbf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ONr-rp-Gie" secondAttribute="bottom" id="PBs-6o-QjQ"/>
                             <constraint firstItem="hdu-Ii-HVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZkR-Iu-T0S"/>
+                            <constraint firstItem="ONr-rp-Gie" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dom-TD-X7i"/>
+                            <constraint firstItem="ONr-rp-Gie" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gLj-Ep-rOW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="548"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="547.76785714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6mt-C2-UTj">
