@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LeftViewCell" rowHeight="52" id="tzm-D6-AKR" customClass="LeftViewCell" customModule="ChatSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tzm-D6-AKR" id="fnA-za-ti2">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4c7-BM-Ggr">
+                        <rect key="frame" x="16" y="4" width="266" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:54 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7x-eK-wIm">
+                                <rect key="frame" x="204" y="21" width="50" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ujX-Td-tWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Sir Dolar Amit" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNz-by-izB">
+                                <rect key="frame" x="12" y="8" width="176" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="z7x-eK-wIm" secondAttribute="bottom" constant="8" id="44W-89-hCP"/>
+                            <constraint firstAttribute="trailing" secondItem="z7x-eK-wIm" secondAttribute="trailing" constant="12" id="80M-eD-dG4"/>
+                            <constraint firstItem="bNz-by-izB" firstAttribute="leading" secondItem="4c7-BM-Ggr" secondAttribute="leading" constant="12" id="C8v-jb-05n"/>
+                            <constraint firstAttribute="bottom" secondItem="bNz-by-izB" secondAttribute="bottom" constant="8" id="Pr1-wu-I1F"/>
+                            <constraint firstItem="bNz-by-izB" firstAttribute="top" secondItem="4c7-BM-Ggr" secondAttribute="top" constant="8" id="cIq-wQ-G4o"/>
+                            <constraint firstItem="z7x-eK-wIm" firstAttribute="leading" secondItem="bNz-by-izB" secondAttribute="trailing" constant="16" id="ge4-bA-owg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4c7-BM-Ggr" secondAttribute="trailing" constant="64" id="7db-Rk-0du"/>
+                    <constraint firstAttribute="bottom" secondItem="4c7-BM-Ggr" secondAttribute="bottom" constant="4" id="AIC-ld-9h3"/>
+                    <constraint firstItem="4c7-BM-Ggr" firstAttribute="leading" secondItem="fnA-za-ti2" secondAttribute="leading" constant="16" id="Xfj-EB-DkW"/>
+                    <constraint firstItem="4c7-BM-Ggr" firstAttribute="top" secondItem="fnA-za-ti2" secondAttribute="top" constant="4" id="sZF-bl-nxW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="u03-WD-8hA"/>
+            <connections>
+                <outlet property="messageContainerView" destination="4c7-BM-Ggr" id="TMm-40-FuW"/>
+                <outlet property="textMessageLabel" destination="bNz-by-izB" id="mm8-Ne-XdP"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
