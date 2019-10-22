@@ -70,7 +70,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="547.76785714285711"/>
+            <point key="canvasLocation" x="1480" y="548"/>
+        </scene>
+        <!--Chat List View Controller-->
+        <scene sceneID="pfz-Vq-cW5">
+            <objects>
+                <viewController id="opI-1y-NY6" customClass="ChatListViewController" customModule="ChatSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ei-n2-UWG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Ss-kG-Sqi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Ss-kG-Sqi" firstAttribute="top" secondItem="205-I9-Jsk" secondAttribute="top" id="3hm-l7-1ta"/>
+                            <constraint firstItem="205-I9-Jsk" firstAttribute="bottom" secondItem="9Ss-kG-Sqi" secondAttribute="bottom" id="Shu-d5-0Ai"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ss-kG-Sqi" secondAttribute="trailing" id="aDr-Us-Fet"/>
+                            <constraint firstItem="9Ss-kG-Sqi" firstAttribute="leading" secondItem="205-I9-Jsk" secondAttribute="leading" id="z5B-dl-h5u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="205-I9-Jsk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EcM-pI-Zr0"/>
+                    <connections>
+                        <outlet property="tableView" destination="9Ss-kG-Sqi" id="ueK-IZ-eoE"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showChatDetail" id="kze-UI-Abi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07v-Bb-EmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6mt-C2-UTj">
@@ -83,7 +115,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tLx-rn-hg4"/>
+                        <segue destination="opI-1y-NY6" kind="relationship" relationship="rootViewController" id="aWU-dn-zQy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M5-i7-bgz" userLabel="First Responder" sceneMemberID="firstResponder"/>

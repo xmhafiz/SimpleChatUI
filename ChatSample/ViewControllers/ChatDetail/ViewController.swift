@@ -17,7 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // set title
         title = "Lorem Ipsum"
-        
+        setupTable()
+        fetchData()
+    }
+    
+    func setupTable() {
         // config tableView
         tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
@@ -27,7 +31,6 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "RightViewCell", bundle: nil), forCellReuseIdentifier: "RightViewCell")
         tableView.register(UINib(nibName: "LeftViewCell", bundle: nil), forCellReuseIdentifier: "LeftViewCell")
         
-        fetchData()
     }
     
     func fetchData() {
