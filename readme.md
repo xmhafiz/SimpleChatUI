@@ -10,10 +10,14 @@ iOS Apps, for simple chatting or messaging view, developed with UITableView and 
 No specific installation required, just hit the Run button.
 
 ### To be Added (Maybe)
+- Chat list (in progress)
+
+- Chat Detaial
 - Image
 - Sender name
 - Message bubble tail
-- Chat list
+- Header section with Today, Yesterday, date, etc
+
 
 ### License
 Licensed under the [MIT license](http://opensource.org/licenses/MIT)
