@@ -11,8 +11,7 @@ No specific installation required, just hit the Run button.
 
 ### To be Added (Maybe)
 - Chat list (in progress)
-
-- Chat Detaial
+- Chat Detail Page
 - Image
 - Sender name
 - Message bubble tail
